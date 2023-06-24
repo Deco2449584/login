@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="Signin.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerLogo">
+        <h1>Welcome back!</h1>
+        <p>you can sign in to access whit your existing Acoount</p>
+      </div>
+      <div class="containerLogin">
+        <form class="form" action="">
+          <h1 class="titulo">Sign in</h1>
+          <fieldset>
+            <div class="input">
+              <i class="bx bx-user"></i>
+              <input type="text" id="Nombre" placeholder="Username or email" />
+            </div>
+            <div class="input">
+              <i class="bx bxs-key"></i>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <div class="Remember">
+              <input id="checkbox" type="checkbox" />
+              <label for="checkbox"
+                >Remember me
+                <a href="./ForgotPassword.html">Forgot Password?</a>
+              </label>
+            </div>
+            <button id="button" type="submit">Sign in</button>
+          </fieldset>
+          <p>New Here? <a href="./CreateAcoount.html">Create an Acoount</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
