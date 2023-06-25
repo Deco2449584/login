@@ -35,7 +35,8 @@
   margin: 0;
   padding: 0;
 }
-.containerLogo {
+
+.cardLogo {
   background-image: url(./img/fondopurpura.jpg);
   width: 600px;
   height: 500px;
@@ -48,15 +49,16 @@
   flex-direction: column;
   padding: 1px;
 }
-.containerLogo h1 {
+.cardLogo h1 {
   padding: 10px;
   margin-right: 10;
   font-family: "Permanent Marker", cursive;
 }
-.containerLogo p {
+.cardLogo p {
   font-family: "Permanent Marker", cursive;
 }
-.containerLogin {
+
+.card {
   background: white;
   width: 400px;
   height: 500px;
@@ -66,6 +68,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 1px;
 }
 
@@ -89,7 +92,7 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
-.containerLogin input {
+input {
   border: none;
   background-color: transparent;
   outline: none;
@@ -114,15 +117,12 @@
   color: var(--colortree);
   font-size: 20px;
 }
-.Remember {
+.footer-card {
   font-size: 12px;
   margin-top: 10px;
 }
-.Remember a {
-  font-size: 12px;
-  margin-left: 20px;
-}
-#button {
+
+.button {
   border-radius: 20px;
   width: 200px;
   height: 35px;
@@ -132,10 +132,45 @@
   border: none;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
-a {
-  color: var(--colortree);
-}
+
 .containerLogin p {
   margin-top: 10px;
+}
+.containerForgot p {
+  margin-top: 10px;
+}
+.link-signin {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--colortree);
+  font-size: 12px;
+}
+.link-forgot {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--colortree);
+  font-size: 12px;
+}
+.link-create {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--colortree);
+  font-size: 12px;
+}
+.footer-card .link-forgot {
+  margin-left: 12px;
+}
+
+.button:hover {
+  transition: all 0.3s ease;
+  transform: translateY(1px);
+}
+
+.visible {
+  display: block;
+}
+.invisible {
+  display: none;
 }
